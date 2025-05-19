@@ -1,15 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from '../../pages/home/Home';
-
-import Contact from '../../pages/contact/Contact';
-import Blog from '../../pages/blog/Blog';
+import SayHello from '../../pages/sayHello/SayHello';
 
 const Router = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/blog' element={<Blog />} />
-      <Route path='/contact' element={<Contact />} />
+      <Route path='/' element={<SayHello page='HOME' />} />
+      <Route path='/blog' element={<SayHello page='BLOG' />} />
+      <Route path='/contact' element={<SayHello page='CONTACT' />} />
     </Routes>
   );
 };
